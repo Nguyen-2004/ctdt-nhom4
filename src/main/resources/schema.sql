@@ -1,3 +1,5 @@
+ALTER TABLE training_program_courses DROP CONSTRAINT IF EXISTS FK_training_program_courses_courses;
+
 -- XÓA BẢNG NẾU TỒN TẠI
 DROP TABLE IF EXISTS training_program_courses;
 DROP TABLE IF EXISTS courses;

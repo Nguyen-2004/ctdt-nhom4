@@ -15,4 +15,14 @@ public class ViewController {
     public String tpc() {
         return "training_program_courses";
     }
+
+    @GetMapping("/majors-ui")
+    public String majors() {
+        return "majors";
+    }
+
+    @GetMapping("/training-programs-ui")
+    public String trainingPrograms() {
+        return "training_programs";
+    }
 }

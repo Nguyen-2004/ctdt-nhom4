@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý ngành</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script defer src="/js/majors.js"></script>
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <h2 class="mb-4 text-primary">🎓 Quản lý ngành</h2>
+
+    <!-- ALERT -->
+    <div id="alertBox"></div>
+
+    <!-- FORM -->
+    <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+            <form id="majorForm" class="row g-3">
+
+                <div class="col-md-5">
+                    <label class="form-label">Mã ngành</label>
+                    <input type="text" id="major_code" class="form-control" required>
+                </div>
+
+                <div class="col-md-5">
+                    <label class="form-label">Tên ngành</label>
+                    <input type="text" id="major_name" class="form-control" required>
+                </div>
+
+                <div class="col-md-2 d-flex align-items-end">
+                    <button class="btn btn-success w-100">
+                        ➕ Thêm
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="card shadow-sm">
+        <div class="card-body">
+
+            <table class="table table-bordered table-hover text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Mã ngành</th>
+                        <th>Tên ngành</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+
+                <tbody id="majorTable"></tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
